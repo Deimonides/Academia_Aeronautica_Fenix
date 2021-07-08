@@ -1,0 +1,126 @@
+/* TITULOS */
+.header{
+    /* background-color: rgb(0, 0, 160); */
+    background-image: linear-gradient(to right, rgb(0, 0, 160), rgb(0, 0, 222), rgb(0, 0, 160));
+    font-family: 'Inter', sans-serif;
+    position: sticky;
+    top: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    z-index: 10;
+}
+.header__nombre{
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    display: inline;
+    height: 80px;
+}
+.header__titulo{
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+}
+
+/* menu principal */
+.header__menu ul{
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between
+}
+.header__menu li a{
+    color: white;
+    text-decoration: none;
+}
+.header__menu ul li a:hover{
+    color: yellow;
+    font-weight: bolder;
+}
+/* submenu */
+.header__menu ul ul{
+    position: absolute;
+    display: none;
+    width: auto;
+    padding: 0;
+    background: white;
+    border: rgb(0, 0, 160) solid 3px;
+    border-radius: 5%;
+}
+.header__menu ul ul li{
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    border: white solid 2px;
+    background: rgb(0, 0, 160);
+}
+.header__menu ul li:hover ul{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

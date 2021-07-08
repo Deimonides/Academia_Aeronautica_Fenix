@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./media/logo.png" type="image/png" sizes="16x16"><title>Academia Aeronautica Fenix</title>
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styleHeader.css">
+    <link rel="stylesheet" href="./css/styleMain.css">
+    <link rel="stylesheet" href="./css/StyleFooter.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header"> 
+        <div class="header__nombre">
+            <img src="./media/banner.png" class="header__logo" alt="Logo AAF">
+        </div>
+        <nav class="header__menu">
+            <ul> <!-- Menu de navegacion -->
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#">La Academia</a> <!-- submenu -->
+                    <ul>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./galeria.html">Galería</a></li>
+                    </ul>
+                </li>
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="#">Usuarios</a> <!-- submenu -->
+                    <ul>
+                        <li><a href="./alumnos.html">Alumnos</a></li>
+                        <li><a href="./instructores.html">Instructores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- ****************************************************** -->
+    <main>
+        <h1>Contactanos</h1>
+        <div class="formularioContacto"> <!-- Formulario de consultas -->
+            <h2 class="formularioContacto__titulo">Dejanos tu consulta</h2>    
+            <form action="" class="formularioContacto__form"> 
+                <input type="text" name="name" class="formularioContacto__linea" placeholder="Nombre y Apellido">
+                <input type="email" name="email" class="formularioContacto__linea" placeholder="Email">
+                <input type="tel" name="phone" class="formularioContacto__linea" placeholder="Celular">
+                <textarea type="text" name="consulta" class="formularioContacto__caja" placeholder="¿Que queres saber?"></textarea>
+                <input type="submit" name="Enviar" class="boton">
+            </form>
+        </div>
+        
+        <div class="datosContacto"> <!-- Mapita y datos -->
+            <h2 class="datosContacto__titulo">Cómo nos encontrás</h2> 
+            <div class="datosContacto__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.8600512685541!2d-58.6435400417752!3d-34.    66177099511115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.   1!3m3!1m2!1s0x95bcc7527b7549dd%3A0x532d1a1bcae95a2a!2sFray%20Justo%20Sta%20Mar%C3%ADa%20de%20Oro%20%26%20Av.   %20Figueroa%20Alcorta%2C%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1623204255741!5m2!1ses-419!2sar"  class="datosContacto__mapa" width="600" height="300" style="border:3px blue solid;border-radius: 2%" allowfullscreen="0" loading="lazy"></iframe>
+            </div>
+            <p class="datosContacto__linea"><strong>Dirección:</strong> Base Aérea de Morón, ingreso por Av. Figueroa Alcorta y Fray Jo. Sta. Ma. de Oro</p>
+            <p class="datosContacto__linea"><strong>Pista:</strong> SADM 02/20 (asfalto) 2817x38 mt., 34.40.45 S, 058.38.37 W</p>
+            <p class="datosContacto__linea"><strong>Whatsapp:</strong> (+54) 11-2613-8166</p>
+            <p class="datosContacto__linea"><strong>Mail:</strong> <a href="mailto:info@aaf.com.ar">info@aaf.com.ar</a></p>
+        </div>
+
+        <br>
+    </main>
+<!-- ****************************************************** -->            
+    <footer class="footer">
+        <div class="footer__menu">
+            <ul>
+                <li> <!-- Instagram -->
+                    <a href="https://www.instagram.com/"target="_blank">
+                        <div class="footer__item">
+                        <img src="./media/IGw.png" alt="Instagram Logo" class="footer__logo">
+                        Instagram
+                    </a>
+                </li>
+                <li> <!-- Facebook -->
+                    <a href="https://www.facebook.com/"target="_blank">
+                        <div class="footer__item">
+                        <img src="./media/FBw.png" alt="Facebook Logo" class="footer__logo">
+                        Facebook
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    </footer> 
+
+</body>
+</html>

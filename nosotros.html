@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./media/logo.png" type="image/png" sizes="16x16"><title>Academia Aeronautica Fenix</title>
-    <!-- Archivos CSS -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styleHeader.css">
-    <link rel="stylesheet" href="./css/styleMain.css">
-    <link rel="stylesheet" href="./css/styleFooter.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <header class="header"> 
-        <div class="header__nombre">
-            <img src="./media/banner.png" class="header__logo" alt="Logo AAF">
-        </div>
-        <nav class="header__menu">
-            <ul> <!-- Menu de navegacion -->
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#">La Academia</a> <!-- submenu -->
-                    <ul>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="./galeria.html">Galería</a></li>
-                    </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./media/logo.png" type="image/png" sizes="16x16"><title>Academia Aeronautica Fenix</title>
+<!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<!-- Estilos Propios -->
+        <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+        <!-- <link rel="stylesheet" href="./css/styleHeader.css"> -->
+        <!-- <link rel="stylesheet" href="./css/styleMain.css"> -->
+        <!-- <link rel="stylesheet" href="./css/styleFooter.css"> -->
+<!-- Usando SASS -->
+        <link rel="stylesheet" href="./css/style.css">
+<!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">    
+    </head>
+    
+    <body>
+      <!-- ****************************************************** -->
+      <header>
+        <nav class="navbar navbar-expand-lg  navbar-dark ">
+          <a class="navbar-brand" href="#"><img src="./media/banner.png" alt="" class="header__logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Inicio</a>
                 </li>
-                <li><a href="./cursos.html">Cursos</a></li>
-                <li><a href="#">Usuarios</a> <!-- submenu -->
-                    <ul>
-                        <li><a href="./alumnos.html">Alumnos</a></li>
-                        <li><a href="./instructores.html">Instructores</a></li>
-                    </ul>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">La Academia</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item active" href="./nosotros.html">Nosotros</a>
+                    <a class="dropdown-item" href="./galeria.html">Galeria</a>
+                  </div>
                 </li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cursos.html">Cursos</a>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">Usuarios</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="./alumnos.html">Alumnos</a>
+                      <a class="dropdown-item" href="./instructores.html">Instructores</a>
+                    </div>
+                  </li>                
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
         </nav>
-</header>
+      </header>
 <!-- ****************************************************** -->
     <main>
         <h1 class="nosotrosH1">Conocenos</h1>
-        <div class="nosotros"><!-- Trayectoria -->
-            <h2 class="nosotros__titulo">Nuestra trayectoria:</h2> 
+        <div class="container nosotros"><!-- Trayectoria -->
+            <h2 class="nosotros__titulo">Nuestra trayectoria:</h2>
+<!--             <div class="container">  -->
             <p class="nosotros__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum explicabo similique vero maxime, aliquam, facere laudantium ipsam at itaque exercitationem facilis incidunt voluptatibus, qui rem voluptas? Quasi odio repudiandae adipisci, voluptas vitae magnam reiciendis. Tenetur rem quam sapiente corrupti numquam vero pariatur qui, repudiandae, sint repellat praesentium fuga possimus eum ut officia iste provident quos delectus minima aperiam repellendus explicabo obcaecati at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsa porro veniam fugiat nam saepe, dolorem dolor iusto error officiis praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aperiam rerum est quia dolore natus, ipsam alias magni iste nesciunt!</p>
             <img src="./media/cessna152_izq.jpg" alt="foto" class="nosotros__imagen">
+          <!-- </div> -->
         </div>
-        <div class="nosotros">
+        <div class="container-fluid nosotros">
             <h2 class="nosotros__titulo">Nuestra misión:</h2>
             <p class="nosotros__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum in saepe optio qui fugit obcaecati, vel dolores autem voluptatibus delectus beatae natus reiciendis nobis incidunt, ullam numquam minus voluptate odio, rerum consequuntur quibusdam! Corrupti impedit tempore vel ipsam dolore exercitationem iusto consectetur ea, aperiam unde reiciendis illo eaque quod possimus facere! Totam provident facere molestias, quasi sit in iusto dolorem magnam dolore blanditiis eum velit aspernatur rem cum maiores libero minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fuga? Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, dignissimos.</p>
             <img src="./media/cessna152_der.jpg" alt="foto" class="nosotros__imagen">
@@ -77,6 +94,11 @@
             </ul>
         </div>
     </footer> 
+
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 </body>
 </html>

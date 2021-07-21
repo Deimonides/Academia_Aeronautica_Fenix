@@ -1,0 +1,40 @@
+* {
+	font-family: 'Inter', sans-serif;
+}
+.footer {
+	background-image: linear-gradient(to right, rgb(0, 0, 160), rgb(0, 0, 222), rgb(0, 0, 160));
+	font-family: 'Inter', sans-serif;
+	color: white;
+	margin-top: auto;
+	bottom: 0px;
+	z-index: 10;
+}
+.footer__item {
+	display: inline-block;
+	margin: auto 30px;
+}
+.footer__logo {
+	height: 16px;
+	margin: -5px 5px -2px 0px;
+}
+.footer__menu {
+	ul {
+		text-align: center;
+		list-style: none;
+		margin-top: 13px;
+		position: sticky;
+		li {
+			margin: 2px 5px;
+			display: inline-block;
+			text-align: center;
+			&:hover {
+				color: yellow;
+				font-weight: bolder;
+			}
+			a {
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+}

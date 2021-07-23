@@ -202,23 +202,24 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
     .nosotros {
-        max-width: 60vw;
+        max-width: 900px;
         padding: auto;
         height: 420px;
     }
     .nosotros__texto {
         display: inline-block;
-        max-width: 50%;
+        max-width: 60%;
         height: 80%;
     }
     .nosotros__imagen{
         display: inline-block;
+        justify-self: flex-end;
         vertical-align: top;
         max-width: 45%;
         
     }
 }
-.gridGaleria {
+/* .gridGaleria {
 	margin: 20px;
 	display: grid;
 	grid-template-columns: repeat(5, 18vw);
@@ -284,7 +285,7 @@ h3 {
 .celda9 {
 	grid-area: 5/4/6/6;
 	background-image: url(../media/galeria/img2x1_ai.jpg);
-}
+} */
 .carousel-caption {
 	background-color: rgba(0, 0, 160, 0.8);
 }

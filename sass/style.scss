@@ -216,8 +216,8 @@ h3 {
         justify-self: flex-end;
         vertical-align: top;
         max-width: 45%;
-        
     }
+    
 }
 /* .gridGaleria {
 	margin: 20px;
@@ -289,6 +289,7 @@ h3 {
 .carousel-caption {
 	background-color: rgba(0, 0, 160, 0.8);
 }
+
 /* ************** */
 /* *** CURSOS *** */
 /* ************** */
@@ -549,4 +550,15 @@ h3 {
 	text-align: center;
 	margin: 20px auto;
 	font-weight: 500;
+}
+@media screen and (min-width: 410px) {
+    .formularioContacto {
+        max-width: 400px;
+    }
+}
+@media screen and (min-width: 760px) {
+    .datosContacto {
+        max-width: 755px;
+    }
+        
 }

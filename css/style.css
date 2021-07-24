@@ -699,4 +699,16 @@ h3 {
   margin: 20px auto;
   font-weight: 500;
 }
+
+@media screen and (min-width: 410px) {
+  .formularioContacto {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .datosContacto {
+    max-width: 755px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

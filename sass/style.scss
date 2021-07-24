@@ -1,31 +1,12 @@
-/* Imports de SCSS */
-@import 'reset'; /* reseteo de propiedades */
-@import 'header'; /* estilos del Header */
-@import 'footer'; /* estilos del Footer */
+// Imports de SCSS
+@import 'reset'; // Reseteo de propiedades.
+@import 'generales'; // variables y estilos.
+@import 'header'; // Estilos del Header.
+@import 'footer'; // Estilos del Footer.
 
-/* Variables */
-$font-family-base: 'Inter', sans-serif;
-$bg-col-gradient: linear-gradient(to right, rgb(0, 0, 160), rgb(0, 0, 222), rgb(0, 0, 160));
-$col-azul-oscuro: rgb(0, 0, 160);
-$col-azul-claro: rgb(0, 0, 222);
-$bg-img-general: url(../media/fondo.jpg);
-
-
-
-.marcos {
-    border: $col-azul-oscuro solid 3px;
-    border-radius: 2%;
-}
-
-
-/* *************** */
-/* *** GENERAL *** */
-/* *************** */
 /* ************** */
 /* *** INICIO *** */
 /* ************** */
-/* primera seccion */
-/* segunda seccion */
 /* @keyframes "girar360" { */
 /* 	0% { */
 /* 		transform: rotate(1deg); */
@@ -34,53 +15,9 @@ $bg-img-general: url(../media/fondo.jpg);
 /* 		transform: rotate(-360deg); */
 /* 	} */
 /* } */
-body {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	background-image: $bg-img-general;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-position: bottom;
-	font-family: 'Inter', sans-serif !important;
-}
-h1 {
-	font-family: 'Inter', sans-serif;
-	font-style: italic;
-	color: $col-azul-oscuro;
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-h2 {
-	font-family: 'Inter', sans-serif;
-	color: $col-azul-claro;
-	margin: 20px auto;
-}
-h3 {
-	font-family: 'Inter', sans-serif;
-	color:  $col-azul-claro;
-}
-.boton {
-	display: block;
-	width: 200px;
-    max-width: 75%;
-	height: 30px;
-	border-radius: 2%;
-	margin: 10px auto;
-	text-align: center;
-	&:hover {
-		color: $col-azul-oscuro;
-		background-color: rgba(0, 0, 160, 0.1);
-	}
-}
 .modal-header {
 	background-image: $bg-col-gradient;
 	color: white;
-}
-.container-fluid{
-    @extend .marcos;
 }
 .inicio__splash {
 	display: flex;
@@ -160,20 +97,16 @@ h3 {
 	background: white;
 	padding: 10px;
 	max-width: 90vw;
-	/* height: 350px; */
 	margin: 10px auto;
 }
 .nosotros__titulo {
 	display: block;
 	margin: 10px;
-    
 }
 .nosotros__texto {
 	display: inline-block;
 	color: blue;
-    
 	text-align: justify;
-	
 	height: 230px;
 	margin: 10px;
 	overflow: auto;
@@ -195,9 +128,7 @@ h3 {
     .nosotros__imagen{
         display: block;
         margin: 0 auto;
-        /* justify-self: center; */
         max-width: 95%;
-        /* max-width: 45%; */
     }
 }
 @media screen and (min-width: 1024px) {
@@ -217,8 +148,8 @@ h3 {
         vertical-align: top;
         max-width: 45%;
     }
-    
 }
+// Reservo la Grilla, por si acaso.
 /* .gridGaleria {
 	margin: 20px;
 	display: grid;
@@ -289,7 +220,6 @@ h3 {
 .carousel-caption {
 	background-color: rgba(0, 0, 160, 0.8);
 }
-
 /* ************** */
 /* *** CURSOS *** */
 /* ************** */
@@ -322,10 +252,6 @@ h3 {
 	margin: 10px 0 0 0;
 	padding: 10px;
 }
-/* .cursos__titulo { */
-    /* margin-top: 80px; */
-	/* text-align: center; */
-/* } */
 .cursos__nombres {
     margin: 0;
 	text-align: center;
@@ -336,7 +262,6 @@ h3 {
     color: blue;
 	text-align: justify;
 	font-weight: 500;
-    
 }
 .cursos__fotos {
     display: block;
@@ -352,7 +277,6 @@ h3 {
 	}
 }
 @media screen and (min-width: 360px) {
-    
     .cursos__contenedores{
         overflow: unset;
     }
@@ -371,14 +295,6 @@ h3 {
 	margin-top: 20px;
 }
 .alumnos__titulo {
-	text-align: center;
-}
-.alumnos__linea {
-	display: block;
-	width: 300px;
-    max-width: 80%;
-	height: 30px;
-	margin: 10px auto;
 	text-align: center;
 }
 .alumnos__boton {
@@ -403,20 +319,11 @@ h3 {
 	height: 990px;
 	margin: 20px auto;
 	padding: 10px 30px 30px 30px;
-	
 }
 .registro__titulo {
 	text-align: center;
 }
 .registro__formulario {
-	text-align: center;
-}
-.registro__linea {
-	display: block;
-	width: 300px;
-    max-width: 95%;
-	height: 30px;
-	margin: 10px auto;
 	text-align: center;
 }
 .registro__reglamento {
@@ -427,8 +334,6 @@ h3 {
 	margin: 10px auto;
 	text-align: center;
     flex-wrap: wrap;
-    
-
 }
 .registro__checkbox {
 	display: inline;
@@ -457,35 +362,20 @@ h3 {
 	display: block;
 	margin-bottom: 15px;
 }
+/* ******************** */
+/* *** INSTRUCTORES *** */
+/* ******************** */
 .instructores__ingreso {
 	text-align: center;
-}
-.instructores__linea {
-	display: block;
-	height: 30px;
-	text-align: center;
-	margin: 10px auto;
-	width: 300px;
-    max-width: 80%;
 }
 /* ************* */
 /* *** RESET *** */
 /* ************* */
 .resetpass__ingreso {
 	text-align: center;
-/*     max-width: 80%; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
 }
 .resetpass__titulo {
 	text-align: center;
-}
-.resetpass__linea {
-	display: block;
-	height: 30px;
-	text-align: center;
-    max-width: 80%;
-	margin: 10px auto;
 }
 /* **************** */
 /* *** CONTACTO *** */
@@ -502,14 +392,6 @@ h3 {
 .formularioContacto__titulo {
 	text-align: center;
 }
-.formularioContacto__linea {
-	display: block;
-	height: 30px;
-	text-align: center;
-	margin: 10px auto;
-	width: 300px;
-    max-width: 80%;
-}
 .formularioContacto__caja {
     text-align: center;
 	padding: 10px;
@@ -517,20 +399,11 @@ h3 {
     max-width: 80%;
 	height: 100px;
 }
-/* .boton {
-    display: block;
-	height: 30px;
-	text-align: center;
-	margin: 10px auto;
-	width: 100px;
-    max-width: 80%;
-} */
 .datosContacto {
 	@extend .marcos;
     display: block;
 	margin: 10px auto;
 	background: white;
-	
 	max-width: 95%;
 	padding: 20px;
 }
@@ -543,7 +416,6 @@ h3 {
     display: block;
 	margin: 20px auto;
     width: 70%;
-
 }
 .datosContacto__linea {
 	display: block;
@@ -560,5 +432,4 @@ h3 {
     .datosContacto {
         max-width: 755px;
     }
-        
 }

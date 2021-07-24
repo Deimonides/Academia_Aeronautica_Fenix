@@ -1,0 +1,63 @@
+/* Variables y Estilos Universales*/
+// Variables
+$font-family-base: 'Inter', sans-serif;
+$bg-col-gradient: linear-gradient(to right, rgb(0, 0, 160), rgb(0, 0, 222), rgb(0, 0, 160));
+$col-azul-oscuro: rgb(0, 0, 160);
+$col-azul-claro: rgb(0, 0, 222);
+$bg-img-general: url(../media/fondo.jpg);
+// Estilos Universales
+.marcos {
+    border: $col-azul-oscuro solid 3px;
+    border-radius: 2%;
+}
+.container-fluid{
+    @extend .marcos;
+}
+// Cajas Input para cada pagina
+@each $pagInput in alumnos, instructores, registro, resetpass, formularioContacto {
+    .#{$pagInput}__linea {
+        display: block;
+        width: 300px;
+        max-width: 80%;
+        height: 30px;
+        text-align: center;
+        margin: 10px auto;
+    }
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-image: $bg-img-general;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-position: bottom;
+}
+h1 {
+	font-style: italic;
+	color: $col-azul-oscuro;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+h2 {
+	color: $col-azul-claro;
+	margin: 20px auto;
+}
+h3 {
+	color:  $col-azul-claro;
+}
+.boton {
+	display: block;
+	width: 200px;
+    max-width: 75%;
+	height: 30px;
+	border-radius: 2%;
+	margin: 10px auto;
+	text-align: center;
+	&:hover {
+		color: $col-azul-oscuro;
+		background-color: rgba(0, 0, 160, 0.1);
+	}
+}

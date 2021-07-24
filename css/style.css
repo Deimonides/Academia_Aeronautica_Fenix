@@ -1,4 +1,4 @@
-/* Imports de SCSS */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +6,103 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* reseteo de propiedades */
-/* TITULOS */
-/* menu principal */
-/* submenu */
-* {
-  font-family: 'Inter', sans-serif;
+/* Variables y Estilos Universales*/
+.marcos, .container-fluid, .nosotros, .nosotros__imagen, .cursos__contenedores, .cursos__fotos, .registro, .terminos, .formularioContacto, .datosContacto, .datosContacto__mapa {
+  border: #0000a0 solid 3px;
+  border-radius: 2%;
 }
 
+.alumnos__linea {
+  display: block;
+  width: 300px;
+  max-width: 80%;
+  height: 30px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.instructores__linea {
+  display: block;
+  width: 300px;
+  max-width: 80%;
+  height: 30px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.registro__linea {
+  display: block;
+  width: 300px;
+  max-width: 80%;
+  height: 30px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.resetpass__linea {
+  display: block;
+  width: 300px;
+  max-width: 80%;
+  height: 30px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.formularioContacto__linea {
+  display: block;
+  width: 300px;
+  max-width: 80%;
+  height: 30px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../media/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: bottom;
+}
+
+h1 {
+  font-style: italic;
+  color: #0000a0;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #0000de;
+  margin: 20px auto;
+}
+
+h3 {
+  color: #0000de;
+}
+
+.boton {
+  display: block;
+  width: 200px;
+  max-width: 75%;
+  height: 30px;
+  border-radius: 2%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.boton:hover {
+  color: #0000a0;
+  background-color: rgba(0, 0, 160, 0.1);
+}
+
+/* HEADER */
 header {
   background-image: linear-gradient(to right, #0000a0, #0000de, #0000a0);
-  font-family: 'Inter', sans-serif;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -81,11 +167,7 @@ header {
   background-image: linear-gradient(to right, #0000a0, #0000de, #0000a0);
 }
 
-/* estilos del Header */
-* {
-  font-family: 'Inter', sans-serif;
-}
-
+/* FOOTER */
 .footer {
   background-image: linear-gradient(to right, #0000a0, #0000de, #0000a0);
   font-family: 'Inter', sans-serif;
@@ -128,21 +210,9 @@ header {
   text-decoration: none;
 }
 
-/* estilos del Footer */
-/* Variables */
-.marcos, .container-fluid, .nosotros, .nosotros__imagen, .cursos__contenedores, .cursos__fotos, .registro, .terminos, .formularioContacto, .datosContacto, .datosContacto__mapa {
-  border: #0000a0 solid 3px;
-  border-radius: 2%;
-}
-
-/* *************** */
-/* *** GENERAL *** */
-/* *************** */
 /* ************** */
 /* *** INICIO *** */
 /* ************** */
-/* primera seccion */
-/* segunda seccion */
 /* @keyframes "girar360" { */
 /* 	0% { */
 /* 		transform: rotate(1deg); */
@@ -151,53 +221,6 @@ header {
 /* 		transform: rotate(-360deg); */
 /* 	} */
 /* } */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-image: url(../media/fondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-position: bottom;
-  font-family: 'Inter', sans-serif !important;
-}
-
-h1 {
-  font-family: 'Inter', sans-serif;
-  font-style: italic;
-  color: #0000a0;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-family: 'Inter', sans-serif;
-  color: #0000de;
-  margin: 20px auto;
-}
-
-h3 {
-  font-family: 'Inter', sans-serif;
-  color: #0000de;
-}
-
-.boton {
-  display: block;
-  width: 200px;
-  max-width: 75%;
-  height: 30px;
-  border-radius: 2%;
-  margin: 10px auto;
-  text-align: center;
-}
-
-.boton:hover {
-  color: #0000a0;
-  background-color: rgba(0, 0, 160, 0.1);
-}
-
 .modal-header {
   background-image: linear-gradient(to right, #0000a0, #0000de, #0000a0);
   color: white;
@@ -287,7 +310,6 @@ h3 {
   background: white;
   padding: 10px;
   max-width: 90vw;
-  /* height: 350px; */
   margin: 10px auto;
 }
 
@@ -322,9 +344,7 @@ h3 {
   .nosotros__imagen {
     display: block;
     margin: 0 auto;
-    /* justify-self: center; */
     max-width: 95%;
-    /* max-width: 45%; */
   }
 }
 
@@ -451,10 +471,6 @@ h3 {
   padding: 10px;
 }
 
-/* .cursos__titulo { */
-/* margin-top: 80px; */
-/* text-align: center; */
-/* } */
 .cursos__nombres {
   margin: 0;
   text-align: center;
@@ -506,15 +522,6 @@ h3 {
   text-align: center;
 }
 
-.alumnos__linea {
-  display: block;
-  width: 300px;
-  max-width: 80%;
-  height: 30px;
-  margin: 10px auto;
-  text-align: center;
-}
-
 .alumnos__boton {
   display: block;
   width: 100px;
@@ -545,15 +552,6 @@ h3 {
 }
 
 .registro__formulario {
-  text-align: center;
-}
-
-.registro__linea {
-  display: block;
-  width: 300px;
-  max-width: 95%;
-  height: 30px;
-  margin: 10px auto;
   text-align: center;
 }
 
@@ -598,17 +596,11 @@ h3 {
   margin-bottom: 15px;
 }
 
+/* ******************** */
+/* *** INSTRUCTORES *** */
+/* ******************** */
 .instructores__ingreso {
   text-align: center;
-}
-
-.instructores__linea {
-  display: block;
-  height: 30px;
-  text-align: center;
-  margin: 10px auto;
-  width: 300px;
-  max-width: 80%;
 }
 
 /* ************* */
@@ -616,21 +608,10 @@ h3 {
 /* ************* */
 .resetpass__ingreso {
   text-align: center;
-  /*     max-width: 80%; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
 }
 
 .resetpass__titulo {
   text-align: center;
-}
-
-.resetpass__linea {
-  display: block;
-  height: 30px;
-  text-align: center;
-  max-width: 80%;
-  margin: 10px auto;
 }
 
 /* **************** */
@@ -649,15 +630,6 @@ h3 {
   text-align: center;
 }
 
-.formularioContacto__linea {
-  display: block;
-  height: 30px;
-  text-align: center;
-  margin: 10px auto;
-  width: 300px;
-  max-width: 80%;
-}
-
 .formularioContacto__caja {
   text-align: center;
   padding: 10px;
@@ -666,14 +638,6 @@ h3 {
   height: 100px;
 }
 
-/* .boton {
-    display: block;
-	height: 30px;
-	text-align: center;
-	margin: 10px auto;
-	width: 100px;
-    max-width: 80%;
-} */
 .datosContacto {
   display: block;
   margin: 10px auto;

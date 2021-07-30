@@ -7,8 +7,10 @@ $col-azul-claro: rgb(0, 0, 222);
 $bg-img-general: url(../media/fondo.jpg);
 // Estilos Universales
 .marcos {
-    border: $col-azul-oscuro solid 3px;
-    border-radius: 2%;
+    /* border: $col-azul-oscuro solid 3px; */
+    border: rgb(172, 172, 172) solid 1px;
+    border-radius: 5%;
+	box-shadow: 2px 3px #afafaf
 }
 .container-fluid{
     @extend .marcos;
@@ -24,6 +26,7 @@ $bg-img-general: url(../media/fondo.jpg);
         margin: 10px auto;
     }
 }
+
 body {
 	min-height: 100vh;
 	display: flex;

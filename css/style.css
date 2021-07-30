@@ -8,8 +8,10 @@
 
 /* Variables y Estilos Universales*/
 .marcos, .container-fluid, .nosotros, .nosotros__imagen, .cursos__contenedores, .cursos__fotos, .registro, .terminos, .formularioContacto, .datosContacto, .datosContacto__mapa {
-  border: #0000a0 solid 3px;
-  border-radius: 2%;
+  /* border: $col-azul-oscuro solid 3px; */
+  border: #acacac solid 1px;
+  border-radius: 5%;
+  box-shadow: 2px 3px #afafaf;
 }
 
 .alumnos__linea {
@@ -230,12 +232,14 @@ header {
   display: flex;
   width: 100%;
   height: 85vh;
-  background-image: url(../media/index/imagen3.jpg);
+  background-image: url(../media/index/index.jpg);
   background-position: center;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
   align-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .inicio__titulo {
@@ -266,6 +270,10 @@ header {
   align-self: flex-start;
   margin-left: 5rem;
   background-color: rgba(255, 255, 222, 0.3);
+}
+
+.blockquote:hover {
+  background-color: rgba(255, 255, 222, 0.6);
 }
 
 .inicio__links {
@@ -352,7 +360,7 @@ header {
   .nosotros {
     max-width: 900px;
     padding: auto;
-    height: 420px;
+    height: 290px;
   }
   .nosotros__texto {
     display: inline-block;
@@ -363,7 +371,7 @@ header {
     display: inline-block;
     justify-self: flex-end;
     vertical-align: top;
-    max-width: 45%;
+    max-width: 35%;
   }
 }
 

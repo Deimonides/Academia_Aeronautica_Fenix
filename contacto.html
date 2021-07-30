@@ -1,121 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./media/logo.png" type="image/png" sizes="16x16"><title>Academia Aeronautica Fenix</title>
-<!-- Bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-<!-- Estilos Propios -->
-        <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-        <!-- <link rel="stylesheet" href="./css/styleHeader.css"> -->
-        <!-- <link rel="stylesheet" href="./css/styleMain.css"> -->
-        <!-- <link rel="stylesheet" href="./css/styleFooter.css"> -->
-<!-- Usando SASS -->
-        <link rel="stylesheet" href="./css/style.css">
-<!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">    
-    </head>
-    
-    <body>
-      <!-- ****************************************************** -->
-      <header>
-        <nav class="navbar navbar-expand-lg  navbar-dark ">
-          <a class="navbar-brand" href="#"><img src="./media/banner.png" alt="" class="header__logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">La Academia</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./media/logo.png" type="image/png" sizes="16x16"><title>Contacto - Academia Fenix</title>
+    <meta name="description" content="Formulario de contacto con la academia, y datos de ubicacion.">
+    <meta name="keywords" content="contacto, formulario, mapa, ubicacion">
+    <meta name="author" content="Gerardo Solotun">
+    <meta property="og:title" content="Academia Aeronautica Fenix" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://academiaaeronauticafenix.000webhostapp.com/" />
+    <meta property="og:image" content="https://academiaaeronauticafenix.000webhostapp.com/media/logo.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">    
+    <!-- Animaciones (https://animate.style/) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">       
+  </head>
+  <body>
+    <!-- ****************************************************** -->
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark ">
+        <a class="navbar-brand" href="#"><img src="./media/banner.png" alt="" class="header__logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <span class="w-100 d-block"></span>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">La Academia</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./nosotros.html">Nosotros</a>
+                  <a class="dropdown-item" href="./galeria.html">Galeria</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./cursos.html">Cursos</a>
+              </li>                
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">Usuarios</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./nosotros.html">Nosotros</a>
-                    <a class="dropdown-item" href="./galeria.html">Galeria</a>
+                    <a class="dropdown-item" href="./alumnos.html">Alumnos</a>
+                    <a class="dropdown-item" href="./instructores.html">Instructores</a>
                   </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./cursos.html">Cursos</a>
                 </li>                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">Usuarios</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="./alumnos.html">Alumnos</a>
-                      <a class="dropdown-item" href="./instructores.html">Instructores</a>
-                    </div>
-                  </li>                
-                <li class="nav-item">
-                  <a class="nav-link active" href="./contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-      </header>
-<!-- ****************************************************** -->
-    <main>
-        <h1>Contactanos</h1>
-        <div class="container-fluid formularioContacto"> <!-- Formulario de consultas -->
-            <h2 class="formularioContacto__titulo">Dejanos tu consulta</h2>    
-            <form action="" class="formularioContacto__form"> 
-                <input type="text" name="name" class="formularioContacto__linea" placeholder="Nombre y Apellido">
-                <input type="email" name="email" class="formularioContacto__linea" placeholder="Email">
-                <input type="tel" name="phone" class="formularioContacto__linea" placeholder="Celular">
-                <textarea type="text" name="consulta" class="formularioContacto__caja" placeholder="¿Que queres saber?"></textarea>
-                <input type="submit" name="Enviar" class="boton" value="Enviar">
-            </form>
-        </div>
-        
-        <div class="container-fluid datosContacto"> <!-- Mapita y datos -->
-            <h2 class="datosContacto__titulo">Cómo nos encontrás</h2> 
-            <!-- <div class="container-fluid "> -->
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.8600512685541!2d-58.6435400417752!3d-34.    66177099511115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.   1!3m3!1m2!1s0x95bcc7527b7549dd%3A0x532d1a1bcae95a2a!2sFray%20Justo%20Sta%20Mar%C3%ADa%20de%20Oro%20%26%20Av.   %20Figueroa%20Alcorta%2C%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1623204255741!5m2!1ses-419!2sar"  class="datosContacto__mapa" width="600" height="300" style="border:3px blue solid;border-radius: 2%" allowfullscreen="0" loading="lazy"></iframe> -->
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7202778645233!2d-58.644634384263846!3d-34.66176656807995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7527b7549dd%3A0x532d1a1bcae95a2a!2sAv.%20Figueroa%20Alcorta%20%26%20Fray%20Justo%20Sta%20Mar%C3%ADa%20de%20Oro%2C%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1626754087182!5m2!1ses-419!2sar" class="datosContacto__mapa" allowfullscreen="1" loading="lazy"></iframe>
-
-
-
-               
-            <!-- </div> -->
-            <p class="datosContacto__linea"><strong>Dirección:</strong> Base Aérea de Morón, ingreso por Av. Figueroa Alcorta y Fray Jto. Sta. Ma. de Oro</p>
-            <p class="datosContacto__linea"><strong>Pista:</strong> SADM 02/20 (asfalto) 2817x38 mt., 34.40.45 S, 058.38.37 W</p>
-            <p class="datosContacto__linea"><strong>Whatsapp:</strong> (+54) 11-2613-8166</p>
-            <p class="datosContacto__linea"><strong>Mail:</strong> <a href="mailto:info@aaf.com.ar">info@aaf.com.ar</a></p>
-        </div>
-
-        <br>
-    </main>
-<!-- ****************************************************** -->            
-    <footer class="footer">
-        <div class="footer__menu">
-            <ul>
-                <li> <!-- Instagram -->
-                    <a href="https://www.instagram.com/"target="_blank">
-                        <div class="footer__item">
-                        <img src="./media/IGw.png" alt="Instagram Logo" class="footer__logo">
-                        Instagram
-                    </a>
-                </li>
-                <li> <!-- Facebook -->
-                    <a href="https://www.facebook.com/"target="_blank">
-                        <div class="footer__item">
-                        <img src="./media/FBw.png" alt="Facebook Logo" class="footer__logo">
-                        Facebook
-                    </a>
-                </li>
-            
+              <li class="nav-item">
+                <a class="nav-link active" href="./contacto.html">Contacto</a>
+              </li>
             </ul>
-        </div>
-    </footer> 
-
-    
+          </div>
+      </nav>
+    </header>
+    <!-- ****************************************************** -->
+    <main>
+      <h1 class="animate__animated animate__zoomIn">Contactanos</h1>
+      <div class="container-fluid formularioContacto"> <!-- Formulario de consultas -->
+        <h2 class="formularioContacto__titulo">Dejanos tu consulta</h2>    
+        <form action="" class="formularioContacto__form"> 
+          <input type="text" name="name" class="formularioContacto__linea" placeholder="Nombre y Apellido">
+          <input type="email" name="email" class="formularioContacto__linea" placeholder="Email">
+          <input type="tel" name="phone" class="formularioContacto__linea" placeholder="Celular">
+          <textarea type="text" name="consulta" class="formularioContacto__caja" placeholder="¿Que queres saber?"></textarea>
+          <input type="submit" name="Enviar" class="boton" value="Enviar">
+        </form>
+      </div>
+      <div class="container-fluid datosContacto"> <!-- Mapita y datos -->
+        <h2 class="datosContacto__titulo">Cómo nos encontrás</h2> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7202778645233!2d-58.644634384263846!3d-34.66176656807995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7527b7549dd%3A0x532d1a1bcae95a2a!2sAv.%20Figueroa%20Alcorta%20%26%20Fray%20Justo%20Sta%20Mar%C3%ADa%20de%20Oro%2C%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1626754087182!5m2!1ses-419!2sar" class="datosContacto__mapa" allowfullscreen="1" loading="lazy"></iframe>
+        <p class="datosContacto__linea"><strong>Dirección:</strong> Base Aérea de Morón, ingreso por Av. Figueroa Alcorta y Fray Jto. Sta. Ma. de Oro</p>
+        <p class="datosContacto__linea"><strong>Pista:</strong> SADM 02/20 (asfalto) 2817x38 mt., 34.40.45 S, 058.38.37 W</p>
+        <p class="datosContacto__linea"><strong>Whatsapp:</strong> (+54) 11-2613-8166</p>
+        <p class="datosContacto__linea"><strong>Mail:</strong> <a href="mailto:acadaeronauticafenix@gmail.com">acadaeronauticafenix@gmail.com</a></p>
+      </div>
+    </main>
+    <!-- ****************************************************** -->            
+    <footer class="footer">
+      <div class="footer__menu">
+        <ul>
+          <li> <!-- Instagram -->
+            <a href="https://www.instagram.com/aeronauticafenix/"target="_blank">
+              <div class="footer__item">
+              <img src="./media/IGw.png" alt="Instagram Logo" class="footer__logo">
+              Instagram
+            </a>
+          </li>
+          <li> <!-- Facebook -->
+            <a href="https://www.facebook.com/"target="_blank">
+              <div class="footer__item">
+              <img src="./media/FBw.png" alt="Facebook Logo" class="footer__logo">
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>     
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-</body>
+  </body>
 </html>

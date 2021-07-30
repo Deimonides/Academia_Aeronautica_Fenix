@@ -4,136 +4,133 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./media/logo.png" type="image/png" sizes="16x16"><title>Academia Aeronautica Fenix</title>
-<!-- Bootstrap -->
+        <link rel="icon" href="./media/logo.png" type="image/png" sizes="16x16"><title>Cursos - Academia Fenix</title>
+        <meta name="description" content="Detalle de los cursos que se dictan en la Academia.">
+        <meta name="keywords" content="academia, escuela, cursos, carreras, piloto, ppa, pca, tcp, despachante">
+        <meta name="author" content="Gerardo Solotun">
+        <meta property="og:title" content="Academia Aeronautica Fenix" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://academiaaeronauticafenix.000webhostapp.com/" />
+        <meta property="og:image" content="https://academiaaeronauticafenix.000webhostapp.com/media/logo.png" />
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-<!-- Estilos Propios -->
-        <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-        <!-- <link rel="stylesheet" href="./css/styleHeader.css"> -->
-        <!-- <link rel="stylesheet" href="./css/styleMain.css"> -->
-        <!-- <link rel="stylesheet" href="./css/styleFooter.css"> -->
-<!-- Usando SASS -->
+        <!-- Estilos Propios -->
         <link rel="stylesheet" href="./css/style.css">
-<!-- Google Fonts -->
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">   
+        <!-- Animaciones (https://animate.style/) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
     </head>
-
-<body>
-  <!-- ****************************************************** -->
-  <header>
-    <nav class="navbar navbar-expand-lg  navbar-dark ">
-      <a class="navbar-brand" href="#"><img src="./media/banner.png" alt="" class="header__logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La Academia</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./nosotros.html">Nosotros</a>
-                <a class="dropdown-item" href="./galeria.html">Galeria</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./cursos.html">Cursos</a>
-            </li>                
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">Usuarios</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./alumnos.html">Alumnos</a>
-                  <a class="dropdown-item" href="./instructores.html">Instructores</a>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg  navbar-dark ">
+            <a class="navbar-brand" href="#"><img src="./media/banner.png" alt="" class="header__logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <span class="w-100 d-block"></span>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La Academia</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./nosotros.html">Nosotros</a>
+                            <a class="dropdown-item" href="./galeria.html">Galeria</a>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./cursos.html">Cursos</a>
+                        </li>                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">Usuarios</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./alumnos.html">Alumnos</a>
+                            <a class="dropdown-item" href="./instructores.html">Instructores</a>
+                            </div>
+                        </li>                
+                        <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-              </li>                
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-  </header>
-<!-- ****************************************************** -->
-    <main>
-        <h1>Cursos & Carreras</h1>    
-        <section class="cursos">
-            <div class="cursos__contenedores">
-                <h2 class="cursos__nombres">Piloto Privado de Avión</h2>
-                <div class="cursos__placas">
-                    <img src="./media/cessna152_der.jpg" alt="PPA" class="cursos__fotos">
-                    <p class="cursos__textos container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, inventore ab. In, ipsa, at repudiandae harum magnam non modi perspiciatis dolor excepturi aspernatur reprehenderit, tempore odio natus sit quidem enim nulla saepe ratione sint? Dolores reprehenderit quasi, cumque esse enim facilis molestias voluptate necessitatibus quam expedita, mollitia repudiandae temporibus officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi atque quas voluptates odio ratione eos inventore nihil fugiat adipisci commodi, sed consequuntur doloremque, vel dignissimos facilis maiores iure modi! Asperiores ea, magni minima tempore dolores suscipit quia, officia est earum voluptas dolorum repellat veniam magnam facere maiores blanditiis consequatur ab? Dolore, deleniti. Quam, aliquid ex magnam officia reiciendis maiores.</p>
+            </nav>
+        </header>
+        <!-- ****************************************************** -->
+        <main>
+            <h1 class="animate__animated animate__zoomIn">Cursos & Carreras</h1>    
+            <section class="cursos">
+                <div class="cursos__contenedores">
+                    <h2 class="cursos__nombres">Piloto Privado de Avión</h2>
+                    <div class="cursos__placas">
+                        <img src="./media/cursos/ppa.jpg" alt="Foto de avion Cessna C-172 en pista." class="cursos__fotos">
+                        <p class="cursos__textos container">El primer paso para tu carrera de piloto. Recibirás instrucción teórica en las áreas de aerodinámica, motores, meteorología, seguridad en vuelo y radiocomunicaciones. Luego comenzaras tus prácticas, donde aprenderás los procedimientos de vuelo: chequeo de la aeronave, instrumentos, despegue y aterrizaje, comunicaciones, maniobras, emergencias, y VFR. Finalizadas las 40hs presentarás el examen ante la ANAC para recibir tu certificación como Piloto Privado de Avión.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cursos__contenedores">
-                <h2 class="cursos__nombres">Piloto Comercial de Avión</h2>
-                <div class="cursos__placas">
-                    <img src="media\pca.jpg" alt="PCA" class="cursos__fotos">
-                    <p class="cursos__textos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos illum mollitia iste ipsam molestias beatae perspiciatis suscipit earum sit nihil consectetur, dolorum atque quae illo maiores, velit nisi incidunt harum maxime, porro veritatis. Voluptatem reiciendis error optio saepe adipisci, quidem animi iure odit veniam magnam obcaecati dolorem. Maiores, voluptatum, laborum necessitatibus officiis, doloribus obcaecati corporis esse quidem nobis dignissimos architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel atque eligendi fugiat nostrum earum soluta dolores tempore dolorem iusto quisquam magnam, temporibus numquam quo ipsa error quasi facilis sed officia?</p>
+                <div class="cursos__contenedores">
+                    <h2 class="cursos__nombres">Piloto Comercial de Avión</h2>
+                    <div class="cursos__placas">
+                        <img src="./media/cursos/pca.jpg" alt="Foto de avion Beechcraft King Air 350 bimotor." class="cursos__fotos">
+                        <p class="cursos__textos">Para aspirar a tu licencia de Piloto Comercial, deberas sumar 200 horas de vuelo como Piloto Privado. Profundizarás tus conocimientos t</p>
+                    </div>
+                </div>  
+                <div class="cursos__contenedores">
+                    <h2 class="cursos__nombres">Tripulante de Cabina de Pasajeros</h2>
+                    <div class="cursos__placas">
+                            <img src="./media/cursos/tcp.jpg" alt="Foto de azafata en pasillo de cabina." class="cursos__fotos">
+                            <p class="cursos__textos">Lorem ipsum dolor sit, amet consectetur adipisicing   elit. Veritatis nisi dolorum at corrupti animi consequatur aliquid velit,repudiandae suscipit iure quibusdam nostrum sequi fuga quas rerum similique fugiat  ullam tempore! Aspernatur suscipit ex amet aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic iusto maiores quod! Delectus illum eligendi laborum aliquid laboriosam doloremque aut sed? Debitis sapiente porro unde temporibus distinctio culpa quam excepturi, repellendus ullam eum minus.</p>
+                    </div>        
                 </div>
-            </div>  
-            <div class="cursos__contenedores">
-                <h2 class="cursos__nombres">Tripulante de Cabina de Pasajeros</h2>
-                <div class="cursos__placas">
-                        <img src="media\tcp.jpg" alt="TCP" class="cursos__fotos">
-                        <p class="cursos__textos">Lorem ipsum dolor sit, amet consectetur adipisicing   elit. Veritatis nisi dolorum at corrupti animi consequatur aliquid velit,repudiandae suscipit iure quibusdam nostrum sequi fuga quas rerum similique fugiat  ullam tempore! Aspernatur suscipit ex amet aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic iusto maiores quod! Delectus illum eligendi laborum aliquid laboriosam doloremque aut sed? Debitis sapiente porro unde temporibus distinctio culpa quam excepturi, repellendus ullam eum minus.</p>
-                </div>        
-            </div>
-            <div class="cursos__contenedores">
-                <h2 class="cursos__nombres">Aeroaplicador</h2>
-                <div class="cursos__placas">
-                    <img src="media\aap.jpg" alt="AAP" class="cursos__fotos">
-                    <p class="cursos__textos">Lorem, ipsum dolor sit amet consectetur adipisicing   elit. Fuga, impedit cupiditate quidem culpa fugit at dolor optio laudantium   accusantium nesciunt sed autem vero voluptatibus vitae eligendi molestias deserunt    rem nobis, nostrum natus quis, eos doloribus eaque aperiam. Enim, consectetur a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi debitis voluptatum veniam corporis voluptatem obcaecati ea quidem consectetur neque?</p>
+                <div class="cursos__contenedores">
+                    <h2 class="cursos__nombres">Aeroaplicador</h2>
+                    <div class="cursos__placas">
+                        <img src="./media/cursos/aap.jpg" alt="Foto de avion fumigador en vuelo rasante aplicando pesticida." class="cursos__fotos">
+                        <p class="cursos__textos">Lorem, ipsum dolor sit amet consectetur adipisicing   elit. Fuga, impedit cupiditate quidem culpa fugit at dolor optio laudantium   accusantium nesciunt sed autem vero voluptatibus vitae eligendi molestias deserunt    rem nobis, nostrum natus quis, eos doloribus eaque aperiam. Enim, consectetur a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi debitis voluptatum veniam corporis voluptatem obcaecati ea quidem consectetur neque?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cursos__contenedores">
-                <h2 class="cursos__nombres">Despachante de Aeronaves</h2>
-                <div class="cursos__placas">
-                    <img src="media\des.jpg" alt="TCP" class="cursos__fotos">
-                    <p class="cursos__textos">Lorem ipsum dolor sit, amet consectetur adipisicing   elit. Veritatis nisi dolorum at corrupti animi consequatur aliquid velit,     repudiandae suscipit iure quibusdam nostrum sequi fuga quas rerum similique fugiat  ullam tempore! Aspernatur suscipit ex amet aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor distinctio placeat neque, voluptatem quod pariatur excepturi! Hic in nulla eos. Maiores dolore, asperiores, quod dolor ipsam quia mollitia praesentium quos, magnam maxime expedita perspiciatis? Distinctio omnis eligendi qui officiis doloremque.</p>
-                </div>        
-            </div>
-            <div class="cursos__contenedores">
-                <h2 class="cursos__nombres">Meteorólogo Aeronáutico</h2>
-                <div class="cursos__placas">
-                    <img src="media\met.jpg" alt="AAP" class="cursos__fotos">
-                    <p class="cursos__textos">Lorem, ipsum dolor sit amet consectetur adipisicing   elit. Fuga, impedit cupiditate quidem culpa fugit at dolor optio laudantium   accusantium nesciunt sed autem vero voluptatibus vitae eligendi molestias deserunt    rem nobis, nostrum natus quis, eos doloribus eaque aperiam. Enim, consectetur a?   Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque optio,   fugit atque voluptatem expedita saepe dolorum exercitationem. Nihil ipsam, illo   laboriosam aperiam recusandae quas animi, molestias, dolore officia eius  laudantium corrupti ex! Perferendis, exercitationem! Hic beatae culpa amet fugit     ipsa recusandae reiciendis eius. Provident, iure? Veniam et ducimus porro   accusamus culpa repellat, consectetur atque reprehenderit earum aliquam, possimus     modi.</p>
+                <div class="cursos__contenedores">
+                    <h2 class="cursos__nombres">Despachante de Aeronaves</h2>
+                    <div class="cursos__placas">
+                        <img src="./media/cursos/des.jpg" alt="Foto de un despachante en pista frente a un avion." class="cursos__fotos">
+                        <p class="cursos__textos">Lorem ipsum dolor sit, amet consectetur adipisicing   elit. Veritatis nisi dolorum at corrupti animi consequatur aliquid velit,     repudiandae suscipit iure quibusdam nostrum sequi fuga quas rerum similique fugiat  ullam tempore! Aspernatur suscipit ex amet aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor distinctio placeat neque, voluptatem quod pariatur excepturi! Hic in nulla eos. Maiores dolore, asperiores, quod dolor ipsam quia mollitia praesentium quos, magnam maxime expedita perspiciatis? Distinctio omnis eligendi qui officiis doloremque.</p>
+                    </div>        
                 </div>
+                <div class="cursos__contenedores">
+                    <h2 class="cursos__nombres">Meteorólogo Aeronáutico</h2>
+                    <div class="cursos__placas">
+                        <img src="./media/cursos/met.jpg" alt="Foto de una manga de viento." class="cursos__fotos">
+                        <p class="cursos__textos">Lorem, ipsum dolor sit amet consectetur adipisicing   elit. Fuga, impedit cupiditate quidem culpa fugit at dolor optio laudantium   accusantium nesciunt sed autem vero voluptatibus vitae eligendi molestias deserunt    rem nobis, nostrum natus quis, eos doloribus eaque aperiam. Enim, consectetur a?   Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque optio,   fugit atque voluptatem expedita saepe dolorum exercitationem. Nihil ipsam, illo   laboriosam aperiam recusandae quas animi, molestias, dolore officia eius  laudantium corrupti ex! Perferendis, exercitationem! Hic beatae culpa amet fugit     ipsa recusandae reiciendis eius. Provident, iure? Veniam et ducimus porro   accusamus culpa repellat, consectetur atque reprehenderit earum aliquam, possimus     modi.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- ****************************************************** -->                
+        <footer class="footer">
+            <div class="footer__menu">
+                <ul>
+                    <li> <!-- Instagram -->
+                        <a href="https://www.instagram.com/aeronauticafenix/"target="_blank">
+                            <div class="footer__item">
+                            <img src="./media/IGw.png" alt="Instagram Logo" class="footer__logo">
+                            Instagram
+                        </a>
+                    </li>
+                    <li> <!-- Facebook -->
+                        <a href="https://www.facebook.com/"target="_blank">
+                            <div class="footer__item">
+                            <img src="./media/FBw.png" alt="Facebook Logo" class="footer__logo">
+                            Facebook
+                        </a>
+                    </li>
+                
+                </ul>
             </div>
-        </section>
-    </main>
-<!-- ****************************************************** -->                
-    <footer class="footer">
-        <div class="footer__menu">
-            <ul>
-                <li> <!-- Instagram -->
-                    <a href="https://www.instagram.com/"target="_blank">
-                        <div class="footer__item">
-                        <img src="./media/IGw.png" alt="Instagram Logo" class="footer__logo">
-                        Instagram
-                    </a>
-                </li>
-                <li> <!-- Facebook -->
-                    <a href="https://www.facebook.com/"target="_blank">
-                        <div class="footer__item">
-                        <img src="./media/FBw.png" alt="Facebook Logo" class="footer__logo">
-                        Facebook
-                    </a>
-                </li>
-            
-            </ul>
-        </div>
-    </footer> 
-
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-
-
-</body>
-
+        </footer> 
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
 </html>

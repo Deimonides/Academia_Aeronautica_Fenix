@@ -7,14 +7,6 @@
 /* ************** */
 /* *** INICIO *** */
 /* ************** */
-/* @keyframes "girar360" { */
-/* 	0% { */
-/* 		transform: rotate(1deg); */
-/* 	} */
-/* 	100% { */
-/* 		transform: rotate(-360deg); */
-/* 	} */
-/* } */
 .modal-header {
 	background-image: $bg-col-gradient;
 	color: white;
@@ -154,74 +146,6 @@
         max-width: 35%;
     }
 }
-// Reservo la Grilla, por si acaso.
-/* .gridGaleria {
-	margin: 20px;
-	display: grid;
-	grid-template-columns: repeat(5, 18vw);
-	grid-template-rows: repeat(5, 18vw);
-	gap: 20px;
-}
-.celdas {
-	display: flex;
-	align-items: flex-end;
-	justify-items: center;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 10px;
-	text-align: justify;
-	overflow: auto;
-	border: blue solid 3px;
-	border-radius: 2%;
-	p {
-		display: none;
-	}
-	&:hover {
-		p {
-			display: inline-block;
-			background: rgba(255, 255, 255, 0.8);
-			color: blue;
-			font-weight: bolder;
-		}
-	}
-}
-.celda1 {
-	grid-area: 1/1/3/3;
-	background-image: url(../media/galeria/img1x1.jpg);
-}
-.celda2 {
-	grid-area: 1/3/2/5;
-	background-image: url(../media/galeria/img2x1_bd.jpg);
-}
-.celda3 {
-	grid-area: 1/5/3/6;
-	background-image: url(../media/galeria/img1x2.jpg);
-}
-.celda4 {
-	grid-area: 2/3/4/5;
-	background-image: url(../media/galeria/img1x1_cm.jpg);
-}
-.celda5 {
-	grid-area: 3/1/5/2;
-	background-image: url(../media/galeria/img1x2.jpg);
-}
-.celda6 {
-	grid-area: 3/2/5/3;
-	background-image: url(../media/galeria/img1x2_jt.jpg);
-}
-.celda7 {
-	grid-area: 4/3/5/5;
-	background-image: url(../media/galeria/img2x1.jpg);
-}
-.celda8 {
-	grid-area: 3/5/5/6;
-	background-image: url(../media/galeria/img1x2_dw.jpg);
-}
-.celda9 {
-	grid-area: 5/4/6/6;
-	background-image: url(../media/galeria/img2x1_ai.jpg);
-} */
 .carousel-caption {
 	background-color: rgba(0, 0, 160, 0.8);
 }
@@ -371,15 +295,6 @@
 /* *** INSTRUCTORES *** */
 /* ******************** */
 .instructores__ingreso {
-	text-align: center;
-}
-/* ************* */
-/* *** RESET *** */
-/* ************* */
-.resetpass__ingreso {
-	text-align: center;
-}
-.resetpass__titulo {
 	text-align: center;
 }
 /* **************** */

@@ -17,7 +17,7 @@ Tutor de grupo
 https://academiaaeronauticafenix.000webhostapp.com/
 
 #### Descripción
-La web es el resultado del trabajo realizado 
+Este sitio es el resultado del trabajo realizado 
 durante la cursada de Desarrollo Web desde cero, 
 comenzando con el framework y el HTML plano, agregando CSS, 
 reursos como Flexbox, Grids, Botstrap, aplicando responsive, etc.

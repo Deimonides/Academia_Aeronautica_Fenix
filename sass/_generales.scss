@@ -43,6 +43,7 @@ h1 {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-shadow: 2px 2px white;
 }
 h2 {
 	color: $col-azul-claro;
@@ -60,7 +61,7 @@ h3 {
 	margin: 10px auto;
 	text-align: center;
 	&:hover {
-		color: $col-azul-oscuro;
-		background-color: rgba(0, 0, 160, 0.1);
+		color: white;
+		background-color: $col-azul-claro;
 	}
 }

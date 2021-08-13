@@ -76,6 +76,7 @@ h1 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-shadow: 2px 2px white;
 }
 
 h2 {
@@ -98,8 +99,8 @@ h3 {
 }
 
 .boton:hover {
-  color: #0000a0;
-  background-color: rgba(0, 0, 160, 0.1);
+  color: white;
+  background-color: #0000de;
 }
 
 /* -HEADER- */

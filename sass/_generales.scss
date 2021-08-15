@@ -7,7 +7,6 @@ $col-azul-claro: rgb(0, 0, 222);
 $bg-img-general: url(../media/fondo.jpg);
 // Estilos Universales
 .marcos {
-    /* border: $col-azul-oscuro solid 3px; */
     border: rgb(172, 172, 172) solid 1px;
     border-radius: 5%;
 	box-shadow: 2px 3px #afafaf
@@ -52,6 +51,9 @@ h2 {
 h3 {
 	color:  $col-azul-claro;
 }
+h5 {
+	color: white;
+}
 .boton {
 	display: block;
 	width: 200px;
@@ -64,4 +66,10 @@ h3 {
 		color: white;
 		background-color: $col-azul-claro;
 	}
+}
+.contorno {
+	text-shadow: -1px -1px 0 $col-azul-oscuro, 1px -1px 0 $col-azul-oscuro, -1px 1px 0 $col-azul-oscuro, 1px 1px 0 $col-azul-oscuro;
+}
+.carousel-item {
+	max-height: 80vh;
 }

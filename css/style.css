@@ -88,6 +88,11 @@ h3 {
   color: #0000de;
 }
 
+h5 {
+  color: white;
+  /* background-color: $col-azul-claro; */
+}
+
 .boton {
   display: block;
   width: 200px;
@@ -101,6 +106,19 @@ h3 {
 .boton:hover {
   color: white;
   background-color: #0000de;
+}
+
+.contorno {
+  text-shadow: -1px -1px 0 #0000a0, 1px -1px 0 #0000a0, -1px 1px 0 #0000a0, 1px 1px 0 #0000a0;
+}
+
+.carousel-item {
+  max-height: 80vh;
+}
+
+.gal__img {
+  flex: auto;
+  align-items: flex-end;
 }
 
 /* -HEADER- */
